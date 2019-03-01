@@ -1,9 +1,12 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
-import Header from '../components/Header/Header'
+import Layout from '../components/Layout/Layout'
 
 export default () => (
-  <Fragment>
-    <Header />
-  </Fragment>
+  <Layout>
+    <p>
+      This is a <b>test</b> paragraph, to look at typography <em>scaling</em>{' '}
+      and nice fonts.
+    </p>
+  </Layout>
 )
