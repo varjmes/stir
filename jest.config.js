@@ -12,28 +12,26 @@ module.exports = {
     __PATH_PREFIX__: ``,
   },
   testURL: `http://localhost`,
-  setupFiles: [
-    `<rootDir>/config/loadershim.js`,
-    `<rootDir>/config/enzyme.js`,
+  setupFiles: [`<rootDir>/config/loadershim.js`, `<rootDir>/config/enzyme.js`],
+  collectCoverage: true,
+  collectCoverageFrom: [
+    '!**/styles.js',
+    '!**/node_modules/**',
+    '!**/coverage/**',
+    '!gatsby-config.js',
+    '!jest.config.js',
+    '!config/*.js',
+    '**/*.js',
   ],
-  "collectCoverage": true,
-  "collectCoverageFrom": [
-    "!**/styles.js",
-    "**/*.js",
-    "!**/node_modules/**",
-    "!**/coverage/**",
-    "!jest.config.js",
-    "!config/*.js"
-  ],
-  "coverageThreshold": {
-    "global": {
-      "branches": 100,
-      "functions": 100,
-      "lines": 100
+  coverageThreshold: {
+    global: {
+      branches: 100,
+      functions: 100,
+      lines: 100,
     },
-    "./components/": {
-      "branches": 100,
-      "statements": 100
-    }
-  }
+    './src/components/': {
+      branches: 100,
+      statements: 100,
+    },
+  },
 }

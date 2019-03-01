@@ -1,3 +1,5 @@
 import React from 'react'
 
-export default () => <h1>stir.</h1>
+import { Header } from './styles';
+
+export default () => <Header>stir.</Header>
