@@ -21,6 +21,7 @@ module.exports = {
     '!gatsby-config.js',
     '!jest.config.js',
     '!config/*.js',
+    '!src/typography.js',
     '**/*.js',
   ],
   coverageThreshold: {

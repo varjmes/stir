@@ -1,9 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Index page renders correctly 1`] = `
-<h1
-  className="sc-bdVaJa LoiiH"
+<main
+  className="sc-bdVaJa cHrwRm"
 >
-  stir.
-</h1>
+  <h1
+    className="sc-bwzfXH jotfnM"
+  >
+    stir.
+  </h1>
+  <p>
+    This is a 
+    <b>
+      test
+    </b>
+     paragraph, to look at typography 
+    <em>
+      scaling
+    </em>
+     
+    and nice fonts.
+  </p>
+</main>
 `;
