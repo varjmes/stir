@@ -1,3 +1,9 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
-export default () => <div>stir</div>
+import Header from '../components/Header/Header'
+
+export default () => (
+  <Fragment>
+    <Header />
+  </Fragment>
+)
