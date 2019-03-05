@@ -16,8 +16,8 @@
     "gatsby": "2.1.19",
     "gatsby-plugin-styled-components": "3.0.6",
     "gatsby-plugin-typography": "2.2.7",
-    "react": "16.8.3",
-    "react-dom": "16.8.3",
+    "react": "16.8.4",
+    "react-dom": "16.8.4",
     "react-typography": "0.16.18",
     "styled-components": "4.1.3",
     "typography": "0.16.18"
@@ -30,7 +30,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "24.1.0",
     "prettier": "1.16.4",
-    "react-test-renderer": "16.8.3"
+    "react-test-renderer": "16.8.4"
   },
   "repository": {
     "type": "git",
