@@ -6,23 +6,7 @@ const typography = new Typography({
   scaleRatio: 2,
   headerGray: 10,
   bodyGray: 20,
-  googleFonts: [
-    {
-      name: 'Muli',
-      styles: [
-        '700',
-      ],
-    },
-    {
-      name: 'Montserrat',
-      styles: [
-        '400',
-        '400i',
-        '700',
-        '700i',
-      ],
-    },
-  ],
+  omitGoogleFont: true,
   headerFontFamily: [
     'Muli',
     'Helvetica Neue',

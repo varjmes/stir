@@ -1,17 +1,17 @@
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = 'https://stir.dev',
+  URL: NETLIFY_SITE_URL = `https://stir.dev`,
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
   GOOGLE
 } = process.env
-const isNetlifyProduction = NETLIFY_ENV === 'production'
+const isNetlifyProduction = NETLIFY_ENV === `production`
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 
 module.exports = {
   siteMetadata: {
     siteUrl,
-    title: 'Stir',
+    title: `Stir`,
     description: `Learning to cook delicious meals, one step at a time. Experimenting with tried and true recipes and defining our own`,
     author: `James Spencer`,
   },
@@ -76,6 +76,21 @@ module.exports = {
         include_favicon: true,
       },
     },
-    'gatsby-plugin-offline', // This must always come after the manifest plugin, so this plugin can cache the manifest!
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Muli`,
+            variants: [`700`]
+          },
+          {
+            family: `Montserrat`,
+            variants: [`400`, `400i`, `700`, `700i`]
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-offline`, // This must always come after the manifest plugin, so this plugin can cache the manifest!
   ],
 }
