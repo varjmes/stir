@@ -13,6 +13,7 @@ exports[`Recipe renders correctly 1`] = `
     <h1>
       Eggs
     </h1>
+    <span />
     <div
       dangerouslySetInnerHTML={
         Object {

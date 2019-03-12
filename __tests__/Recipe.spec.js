@@ -7,6 +7,11 @@ import { recipeData } from '../__mocks__/data'
 
 
 describe('Recipe', () => {
+  beforeEach(() => {
+    StaticQuery.mockImplementationOnce(({ render }) => render(recipeData)),
+      useStaticQuery.mockReturnValue(recipeData)
+  })
+
   it('renders correctly', () => {
     const tree = renderer
       .create(<Recipe data={recipeData} />)
