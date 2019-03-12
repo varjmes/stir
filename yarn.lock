@@ -4628,7 +4628,7 @@ gatsby-link@^2.0.15:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
-gatsby-plugin-google-analytics@^2.0.17:
+gatsby-plugin-google-analytics@2.0.17:
   version "2.0.17"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.0.17.tgz#42d6e69b66804c27bc2744ef874a642ff98c530c"
   integrity sha512-3YgF7BPtZqVQDiLmHxQqVNWU0bSIczpwD5zoBzcgkWJ5VvuAQ7K0iSXmm5rWGw4rj8VhGCbrK5NXppATlgRHbg==
@@ -4657,7 +4657,7 @@ gatsby-plugin-react-helmet@3.0.9:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-robots-txt@^1.4.0:
+gatsby-plugin-robots-txt@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-robots-txt/-/gatsby-plugin-robots-txt-1.4.0.tgz#2da3fb60a307f83b34a9fbdd85fdb4e6a53e431a"
   integrity sha512-9wFH7bl90jpBEUo2rkXeXHtQy3CqZD/85F9rW6JeyJhbtTFOdnjdx9/Up3zJkxeLblwR1I5+VxHAzp/3jEyb7g==
@@ -4665,7 +4665,7 @@ gatsby-plugin-robots-txt@^1.4.0:
     "@babel/runtime" "^7.3.1"
     generate-robotstxt "^6.0.0"
 
-gatsby-plugin-sitemap@^2.0.8:
+gatsby-plugin-sitemap@2.0.8:
   version "2.0.8"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-2.0.8.tgz#117b1170b3c5bc3a14d3fb97083cce64a42078a5"
   integrity sha512-n/iOV7nSoRdkouMaUKZKbcZPE21yrYh+Cu8p8u7fNSIBr3OpXJGamJs8pCUhe9R/pjwG/aIgyuhqfDXhv5liTA==
