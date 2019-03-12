@@ -24,7 +24,10 @@ export const indexData = {
           "id": "123",
           "frontmatter": {
             "title": "Test Post",
-            "date": "12 March, 2019"
+            "date": "12 March, 2019",
+            "author": "Test author",
+            "description": "Test description",
+            "keywords": ["test", "test1", "test2"]
           },
           "excerpt": "Test excerpt",
           "fields": {
@@ -50,6 +53,13 @@ export const indexData = {
 }
 
 export const recipeData = {
+  "site": {
+    "siteMetadata": {
+      "title": "Test Recipe",
+      "description": "Test Recipe description",
+      "author": "Test recipe author"
+    }
+  },
   "markdownRemark": {
     "html": "<p>Wow, eggs.</p>",
     "frontmatter": {

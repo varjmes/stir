@@ -22,6 +22,7 @@ module.exports = {
     '!gatsby-node.js',
     '!jest.config.js',
     '!config/*.js',
+    '!public/*.js',
     '!src/typography.js',
     '**/*.js',
   ],
