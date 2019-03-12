@@ -19,6 +19,7 @@ module.exports = {
     '!**/node_modules/**',
     '!**/coverage/**',
     '!gatsby-config.js',
+    '!gatsby-node.js',
     '!jest.config.js',
     '!config/*.js',
     '!src/typography.js',
