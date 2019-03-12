@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Recipe renders correctly 1`] = `
+<main
+  className="sc-bdVaJa cHrwRm"
+>
+  <h1
+    className="sc-bwzfXH jotfnM"
+  >
+    stir.
+  </h1>
+  <div>
+    <h1>
+      Eggs
+    </h1>
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>Wow, eggs.</p>",
+        }
+      }
+    />
+  </div>
+</main>
+`;

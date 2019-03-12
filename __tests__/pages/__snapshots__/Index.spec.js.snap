@@ -21,5 +21,33 @@ exports[`Index page renders correctly 1`] = `
      
     and nice fonts.
   </p>
+  <div>
+    <a
+      href="/test/1/"
+    >
+      <h3>
+        Test Post
+         
+        <span>
+          — 
+          12 March, 2019
+        </span>
+      </h3>
+    </a>
+  </div>
+  <div>
+    <a
+      href="/test/2"
+    >
+      <h3>
+        Test Post
+         
+        <span>
+          — 
+          11 March, 2019
+        </span>
+      </h3>
+    </a>
+  </div>
 </main>
 `;
