@@ -3,6 +3,7 @@ const {
   URL: NETLIFY_SITE_URL = 'https://stir.dev',
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
+  GOOGLE
 } = process.env
 const isNetlifyProduction = NETLIFY_ENV === 'production'
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
@@ -51,6 +52,15 @@ module.exports = {
             host: null,
           },
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: GOOGLE,
+        head: true,
+        anonymize: true,
+        respectDNT: true,
       },
     },
   ],
