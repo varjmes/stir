@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { createGlobalStyle } from 'styled-components'
 
 import { Container } from './styles'
@@ -10,10 +11,23 @@ const GlobalStyles = createGlobalStyle`
   }
 `
 
-export default ({ children }) => (
+const Layout = ({ children }) => (
   <Container>
     <GlobalStyles />
     <Header />
     {children}
   </Container>
 )
+
+Layout.defaultProps = {
+  children: [],
+}
+
+Layout.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
+}
+
+export default Layout
