@@ -1,6 +1,7 @@
 export const data = {
   "site": {
     "siteMetadata": {
+      "siteUrl": "https://stir.dev",
       "title": "Test title",
       "description": "Test description",
       "author": "Test author"
@@ -11,6 +12,7 @@ export const data = {
 export const indexData = {
   "site": {
     "siteMetadata": {
+      "siteUrl": "https://stir.dev",
       "title": "Test title",
       "description": "Test description",
       "author": "Test author"
@@ -55,6 +57,7 @@ export const indexData = {
 export const recipeData = {
   "site": {
     "siteMetadata": {
+      "siteUrl": "https://stir.dev",
       "title": "Test Recipe",
       "description": "Test Recipe description",
       "author": "Test recipe author"
