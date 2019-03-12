@@ -63,5 +63,19 @@ module.exports = {
         respectDNT: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Stir | Cooking in progress`,
+        short_name: `Stir`,
+        start_url: `/`,
+        background_color: `#ffebef`,
+        theme_color: `#ffebef`,
+        display: `standalone`,
+        icon: `static/img/icon.png`,
+        include_favicon: true,
+      },
+    },
+    'gatsby-plugin-offline', // This must always come after the manifest plugin, so this plugin can cache the manifest!
   ],
 }
