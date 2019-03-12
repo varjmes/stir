@@ -24,7 +24,7 @@ function Seo({ description, meta, keywords, title, author }) {
   return (
     <Helmet
       htmlAttributes={{
-        lang: 'en-gb'
+        lang: 'en-gb',
       }}
       title={title}
       titleTemplate={`${site.siteMetadata.title} | %s`}
@@ -65,13 +65,17 @@ function Seo({ description, meta, keywords, title, author }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `robots`,
+          content: `index, follow`
+        },
       ]
         .concat(
           keywords.length > 0
             ? {
-              name: `keywords`,
-              content: keywords.join(`, `),
-            }
+                name: `keywords`,
+                content: keywords.join(`, `),
+              }
             : []
         )
         .concat(meta)}
