@@ -35,7 +35,7 @@
   "devDependencies": {
     "babel-jest": "24.5.0",
     "babel-preset-gatsby": "0.1.9",
-    "enzyme": "3.9.0",
+    "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.11.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "24.5.0",
